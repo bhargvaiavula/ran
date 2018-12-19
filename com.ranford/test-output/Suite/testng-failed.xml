@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="nodeUrl" value="http://192.168.0.5:4444/wd/hub/"/>
+  <test name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.pagelibrary.com.ranford.TestExecution">
+        <methods>
+          <include name="excelcontent1"/>
+          <include name="verify_launch"/>
+          <include name="Verify_EmployeePage"/>
+          <include name="excelcontent"/>
+          <include name="verify_RolesPage"/>
+          <include name="verifylogin"/>
+          <include name="Verify_Admin"/>
+          <include name="excelcontent2"/>
+        </methods>
+      </class> <!-- com.pagelibrary.com.ranford.TestExecution -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

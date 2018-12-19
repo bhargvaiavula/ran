@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+<parameter name="nodeUrl" value="http://192.168.0.5:4444/wd/hub/"/>
+
+  <test name="ChromeTest">
+  
+  <parameter name="browser" value="chrome"/>
+ 
+    <classes>
+      <class name="com.pagelibrary.com.ranford.TestExecution">
+      <methods>
+      
+        <include name="verify_launch"></include>
+        <include name="verifylogin"></include>
+        <include name="Verify_Admin"></include>
+        <include name="verify_RolesPage"></include>
+      </methods>
+    </class>
+    </classes>
+    
+  </test> <!-- Test -->
+
+
+
+<test  name="FirefoxTest">
+  
+  <parameter name="browser" value="firefox"/>
+ 
+    <classes>
+      <class name="com.pagelibrary.com.ranford.TestExecution">
+      <methods>
+   
+      <exclude name="BranchesSearch"></exclude>
+      </methods>
+    </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
